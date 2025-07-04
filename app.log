@@ -1,0 +1,83 @@
+2025-07-04T11:50:41.799+05:30  INFO 49361 --- [demo] [main] com.techiesbytes.Application             : Starting Application using Java 21.0.7 with PID 49361 (/home/jain1shh/Documents/learn_springboot/target/classes started by jain1shh in /home/jain1shh/Documents/learn_springboot)
+2025-07-04T11:50:41.802+05:30  INFO 49361 --- [demo] [main] com.techiesbytes.Application             : No active profile set, falling back to 1 default profile: "default"
+2025-07-04T11:50:42.563+05:30  INFO 49361 --- [demo] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-07-04T11:50:42.605+05:30  INFO 49361 --- [demo] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 34 ms. Found 1 JPA repository interface.
+2025-07-04T11:50:42.960+05:30  INFO 49361 --- [demo] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-07-04T11:50:42.971+05:30  INFO 49361 --- [demo] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-07-04T11:50:42.971+05:30  INFO 49361 --- [demo] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.42]
+2025-07-04T11:50:43.019+05:30  INFO 49361 --- [demo] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-07-04T11:50:43.020+05:30  INFO 49361 --- [demo] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1183 ms
+2025-07-04T11:50:43.236+05:30  INFO 49361 --- [demo] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-07-04T11:50:43.277+05:30  INFO 49361 --- [demo] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.18.Final
+2025-07-04T11:50:43.309+05:30  INFO 49361 --- [demo] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-07-04T11:50:43.519+05:30  INFO 49361 --- [demo] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-07-04T11:50:43.543+05:30  INFO 49361 --- [demo] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-07-04T11:50:43.686+05:30  INFO 49361 --- [demo] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:learn_springboot user=SA
+2025-07-04T11:50:43.688+05:30  INFO 49361 --- [demo] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-07-04T11:50:43.705+05:30  WARN 49361 --- [demo] [main] org.hibernate.orm.deprecation            : HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-07-04T11:50:43.722+05:30  INFO 49361 --- [demo] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 2.3.232
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-07-04T11:50:44.373+05:30  INFO 49361 --- [demo] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-07-04T11:50:44.420+05:30  INFO 49361 --- [demo] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-07-04T11:50:44.698+05:30  WARN 49361 --- [demo] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-07-04T11:50:45.147+05:30  INFO 49361 --- [demo] [main] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:learn_springboot'
+2025-07-04T11:50:45.170+05:30  INFO 49361 --- [demo] [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint beneath base path '/actuator'
+2025-07-04T11:50:45.239+05:30  INFO 49361 --- [demo] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2025-07-04T11:50:45.252+05:30  INFO 49361 --- [demo] [main] com.techiesbytes.Application             : Started Application in 3.874 seconds (process running for 4.498)
+2025-07-04T11:50:45.680+05:30  INFO 49361 --- [demo] [RMI TCP Connection(2)-127.0.0.1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-07-04T11:50:45.680+05:30  INFO 49361 --- [demo] [RMI TCP Connection(2)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-07-04T11:50:45.682+05:30  INFO 49361 --- [demo] [RMI TCP Connection(2)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2025-07-04T11:50:55.597+05:30  WARN 49361 --- [demo] [http-nio-8080-exec-2] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [0] in public com.techiesbytes.entity.department com.techiesbytes.controller.DepartmentController.saveDepartment(com.techiesbytes.entity.department): [Field error in object 'department' on field 'dAddress': rejected value [BLR]; codes [Length.department.dAddress,Length.dAddress,Length.java.lang.String,Length]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [department.dAddress,dAddress]; arguments []; default message [dAddress],200,100]; default message [length must be between 100 and 200]] ]
+2025-07-04T11:51:01.430+05:30  WARN 49361 --- [demo] [http-nio-8080-exec-4] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [0] in public com.techiesbytes.entity.department com.techiesbytes.controller.DepartmentController.saveDepartment(com.techiesbytes.entity.department): [Field error in object 'department' on field 'dAddress': rejected value [BLR]; codes [Length.department.dAddress,Length.dAddress,Length.java.lang.String,Length]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [department.dAddress,dAddress]; arguments []; default message [dAddress],200,100]; default message [length must be between 100 and 200]] ]
+2025-07-04T11:51:48.484+05:30  INFO 49361 --- [demo] [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-07-04T11:51:48.486+05:30  INFO 49361 --- [demo] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-07-04T11:51:48.491+05:30  INFO 49361 --- [demo] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-07-04T11:51:48.493+05:30  INFO 49361 --- [demo] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-07-04T11:51:48.495+05:30  INFO 49361 --- [demo] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-07-04T11:51:51.982+05:30  INFO 49615 --- [demo] [main] com.techiesbytes.Application             : Starting Application using Java 21.0.7 with PID 49615 (/home/jain1shh/Documents/learn_springboot/target/classes started by jain1shh in /home/jain1shh/Documents/learn_springboot)
+2025-07-04T11:51:51.984+05:30  INFO 49615 --- [demo] [main] com.techiesbytes.Application             : No active profile set, falling back to 1 default profile: "default"
+2025-07-04T11:51:52.759+05:30  INFO 49615 --- [demo] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-07-04T11:51:52.804+05:30  INFO 49615 --- [demo] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 36 ms. Found 1 JPA repository interface.
+2025-07-04T11:51:53.172+05:30  INFO 49615 --- [demo] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-07-04T11:51:53.183+05:30  INFO 49615 --- [demo] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-07-04T11:51:53.184+05:30  INFO 49615 --- [demo] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.42]
+2025-07-04T11:51:53.218+05:30  INFO 49615 --- [demo] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-07-04T11:51:53.219+05:30  INFO 49615 --- [demo] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1189 ms
+2025-07-04T11:51:53.450+05:30  INFO 49615 --- [demo] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-07-04T11:51:53.487+05:30  INFO 49615 --- [demo] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.18.Final
+2025-07-04T11:51:53.527+05:30  INFO 49615 --- [demo] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-07-04T11:51:53.732+05:30  INFO 49615 --- [demo] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-07-04T11:51:53.757+05:30  INFO 49615 --- [demo] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-07-04T11:51:53.906+05:30  INFO 49615 --- [demo] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:learn_springboot user=SA
+2025-07-04T11:51:53.908+05:30  INFO 49615 --- [demo] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-07-04T11:51:53.926+05:30  WARN 49615 --- [demo] [main] org.hibernate.orm.deprecation            : HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-07-04T11:51:53.948+05:30  INFO 49615 --- [demo] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 2.3.232
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-07-04T11:51:54.594+05:30  INFO 49615 --- [demo] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-07-04T11:51:54.647+05:30  INFO 49615 --- [demo] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-07-04T11:51:54.920+05:30  WARN 49615 --- [demo] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-07-04T11:51:55.359+05:30  INFO 49615 --- [demo] [main] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:learn_springboot'
+2025-07-04T11:51:55.381+05:30  INFO 49615 --- [demo] [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint beneath base path '/actuator'
+2025-07-04T11:51:55.453+05:30  INFO 49615 --- [demo] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2025-07-04T11:51:55.466+05:30  INFO 49615 --- [demo] [main] com.techiesbytes.Application             : Started Application in 3.897 seconds (process running for 4.637)
+2025-07-04T11:51:55.679+05:30  INFO 49615 --- [demo] [RMI TCP Connection(3)-127.0.0.1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-07-04T11:51:55.681+05:30  INFO 49615 --- [demo] [RMI TCP Connection(3)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-07-04T11:51:55.743+05:30  INFO 49615 --- [demo] [RMI TCP Connection(3)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2025-07-04T11:52:00.343+05:30  INFO 49615 --- [demo] [http-nio-8080-exec-1] c.t.controller.DepartmentController      : In saveDepartmnt method of DepartmentController.class
+2025-07-04T11:53:28.933+05:30  INFO 49615 --- [demo] [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-07-04T11:53:28.937+05:30  INFO 49615 --- [demo] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-07-04T11:53:28.946+05:30  INFO 49615 --- [demo] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-07-04T11:53:28.949+05:30  INFO 49615 --- [demo] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-07-04T11:53:28.952+05:30  INFO 49615 --- [demo] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
