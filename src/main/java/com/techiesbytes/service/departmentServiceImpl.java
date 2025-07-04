@@ -1,12 +1,16 @@
 package com.techiesbytes.service;
 
 import com.techiesbytes.entity.department;
+import com.techiesbytes.exception.DepartmentNotFoundException;
 import com.techiesbytes.repository.departmentRepo;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
 import java.util.Objects;
+import java.util.Optional;
 
 @Service
 public class departmentServiceImpl implements departmentService {
@@ -25,8 +29,17 @@ public class departmentServiceImpl implements departmentService {
     }
 
     @Override
-    public department getDept(Long id) {
-        return deptRepo.findById(id).get();
+    public ResponseEntity<?> getDept(Long id){
+
+            Optional<department> dept = deptRepo.findById(id);
+
+            if(dept.isPresent()){
+                return ResponseEntity.ok(dept.get());
+
+            }else{
+                return ResponseEntity.status(HttpStatus.NOT_FOUND).body("Department not found with id:"+id);
+            }
+
     }
 
     @Override

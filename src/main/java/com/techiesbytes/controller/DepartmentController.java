@@ -2,10 +2,12 @@ package com.techiesbytes.controller;
 
 
 import com.techiesbytes.entity.department;
+import com.techiesbytes.exception.DepartmentNotFoundException;
 import com.techiesbytes.service.departmentService;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.ResponseEntity;
 import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.annotation.*;
 
@@ -33,7 +35,7 @@ public class DepartmentController {
     }
 
     @GetMapping("/getDept/{id}")
-    public department getDepartmentById(@PathVariable("id") Long id){
+    public ResponseEntity<?> getDepartmentById(@PathVariable("id") Long id){
         LOGGER.info("In getDepartmentById method of DepartmentController.class");
         return deptService.getDept(id);
     }

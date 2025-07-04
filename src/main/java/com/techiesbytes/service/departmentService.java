@@ -1,6 +1,8 @@
 package com.techiesbytes.service;
 
 import com.techiesbytes.entity.department;
+import com.techiesbytes.exception.DepartmentNotFoundException;
+import org.springframework.http.ResponseEntity;
 
 import java.util.List;
 
@@ -9,7 +11,7 @@ public interface departmentService {
 
     List<department> getAllDept();
 
-    department getDept(Long id);
+    ResponseEntity<?> getDept(Long id);
 
     void deleteDepartmentById(Long id);
 
