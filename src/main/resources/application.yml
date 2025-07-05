@@ -1,0 +1,25 @@
+logging:
+  file:
+    name: app.log
+  level:
+    com:
+      yourpackage: DEBUG
+    root: INFO
+spring:
+  application:
+    name: demo
+  h2:
+    console:
+      path: /h2-console
+      enabled: 'true'
+  datasource:
+    password: ''
+    driver-class-name: org.h2.Driver
+    username: sa
+    url: jdbc:h2:file:./data/mydb
+  jpa:
+    hibernate:
+      ddl-auto: update
+    database-platform: org.hibernate.dialect.H2Dialect
+My:
+  Name: Jainish
