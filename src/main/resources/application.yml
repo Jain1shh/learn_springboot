@@ -5,7 +5,20 @@ logging:
     com:
       yourpackage: DEBUG
     root: INFO
+
 spring:
+  profiles:
+    active: dev
+
+My:
+  Name: Jainish
+
+---
+
+spring:
+  config:
+    activate:
+      on-profile: dev
   application:
     name: demo
   h2:
@@ -16,10 +29,30 @@ spring:
     password: ''
     driver-class-name: org.h2.Driver
     username: sa
-    url: jdbc:h2:file:./data/mydb
+    url: jdbc:h2:file:./data/mydb-dev
   jpa:
     hibernate:
       ddl-auto: update
     database-platform: org.hibernate.dialect.H2Dialect
-My:
-  Name: Jainish
+
+---
+
+spring:
+  config:
+    activate:
+      on-profile: prod
+  application:
+    name: demo
+  h2:
+    console:
+      path: /h2-console
+      enabled: 'true'
+  datasource:
+    password: ''
+    driver-class-name: org.h2.Driver
+    username: sa
+    url: jdbc:h2:file:./data/mydb-prod
+  jpa:
+    hibernate:
+      ddl-auto: update
+    database-platform: org.hibernate.dialect.H2Dialect
