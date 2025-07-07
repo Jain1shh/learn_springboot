@@ -13,6 +13,12 @@ spring:
 My:
   Name: Jainish
 
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+
 ---
 
 spring:
